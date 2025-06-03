@@ -1,0 +1,149 @@
+html {
+  width: 100% !important;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 7em auto;
+  padding-top: 2em;
+} 
+
+.row {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navigation {
+  padding: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.menu li {
+  list-style-type: none;
+  font-weight: bold;
+  color: cornflowerblue;
+  display: inline-block;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width:100%;
+  background: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  transition: top 0.5s ease;
+}
+
+.is-hidden {
+  opacity: 0;
+  transition: 0.5s;
+  top: -70px;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+.footer {
+  border: none;
+  padding: 1rem;
+  box-shadow: none;
+  background: #eee;
+  width: 100%;
+}
+
+.footer .row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.highlight {
+  background: rgba(255,255,0,0.6);
+  display: inline;
+  cursor: pointer;
+  padding: 0.2em 0.25em;
+  transition: 0.25s;
+}
+
+.highlight:hover {
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+  transition: 0.5s;
+}
+
+.highlight:focus {
+  border: none !important;
+}
+
+.menuDescription {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.popover {
+  box-shadow: 5px 5px rgba(255, 192, 203, 0.7);
+  z-index: 0;
+}
+
+@media (min-width: 980px) {
+  body {
+    background: #ccc;
+  }
+  
+  .container {
+    background: #fefefe;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  }
+
+  section {
+    padding-top: 4rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+
+}
