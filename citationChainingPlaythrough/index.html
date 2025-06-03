@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forward Chaining Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>    
+    <div class="main">
+    <section class="one active" id="pubmed1">
+      <div class="sr-only">
+        Note to screen reader users: this tutorial is a simulated click-through demonstration. 
+        On each page, a screenshot image with a button hotspot shows you where to click to move to the next slide. 
+        Once you go to the new slide, you can move the screen reader focus to the slide title by moving back or up one. 
+        If you move the screen reader focus forward, you will be past the slide and can access the lower navigation controls to skip
+        through the tutorial to different sections. This tutorial covers three database interfaces: PubMed, Google Scholar, and ProQuest. 
+      </div>
+      <h1>
+        PubMed (PM) Search
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FPubmedSearchBigCorner.png?v=1622591147290" class="imageImg" alt="PubMed landing page with the term 'motivation' entered into the search box. Click on the search button within this image to to see a list of articles based on this keyword."/>
+          <button class="trigger">
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>To start a search in PubMed, enter your keywords in the main search box and click "Search."</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click "Search" to find articles about motivation.</em>
+        </p>
+      </div>
+    </section>
+    <section class="two " id="pubmed2">
+      <h1>
+        PM: Select an Article
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FPubMedResults.png?v=1622592360535" class="imageImg" alt="PubMed search result page with a list of articles about motivation. Click on the 'Motivation to learn' article link within this image to move on to the next page."/>
+          <button class="trigger">
+            <span class="sr-only">Article link: Motivation to learn</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          The article "Motivation to learn" seems relevant to your topic -- click on it to see more details about the article.
+        </p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click on the article title to see more details about it.</em>
+        </p>
+      </div>
+    </section>
+    <section class="three " id="pubmed3">
+      <h1>
+        PM: Article Details
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FPubMedDetails.png?v=1622592684342" class="imageImg" alt="Article details page with Page Navigation menu on the right-hand side of the screen that includes the Cited By link." />
+          <button class="trigger">
+            <span class="sr-only">Cited by</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>The "Cited By" link in the right-hand menu will open a list of articles that cite this one.</p>
+        <p>You can also try the "Similar Articles" option to find articles that PubMed thinks are relevant to your topic.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click on the "Cited By" link. [Not all articles will have this link.]</em>
+        </p>
+      </div>
+    </section>
+    <section class="four " id="pubmed4">
+      <h1>
+        PM: Partial List
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FPubMedCitedShortList.png?v=1622593156168" class="imageImg" alt="Cited By section of the article details page, showing a partial list of articles that cite the current article. At the bottom of the list is a See all Cited by articles link." />
+          <button class="trigger">
+            <span class="sr-only">See all Cited by articles</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>You can also scroll to the bottom of the page to find this partial list of articles that have cited the article.</p>
+        <p>To see the full list, click the 'See all "Cited by" articles' link.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'See all "Cited by" articles' to see the full list.</em>
+        </p>
+      </div>
+    </section>
+    <section class="five " id="pubmed5">
+      <h1>
+        PM: Full List
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FPubMedCitedFullList.png?v=1622593397339" class="imageImg" alt="New page that is a full list of Cited By articles with filter options on the left-hand side of the page. Click the Next button to move to the Google Scholar demo." />
+          <button class="trigger next teal-btn">
+            Next <i class="bi bi-arrow-right-square-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>This is the full list of articles that PubMed has determined have cited the original article.</p>
+        <p>You can click on the titles to view the articles.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'Next' to try citation chaining in Google Scholar.</em>
+        </p>
+      </div>
+    </section>
+    <section class="six" id="googleScholar1">
+      <h1>
+        Google Scholar (GS) Search
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/2d169cfb-e161-4a61-a8ea-dd800c9dbc24%2FGSSearch.png?v=1622673684105" class="imageImg" alt="Google Scholar main search page with the keyword Motivation.  Click on the search button within this image to move on to the next page." />
+          <button class="trigger">
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>With your search term in the search box, click the "Search" magnifying glass button to start your search.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click the Search magnifying glass icon to search for articles in Google Scholar.</em>
+        </p>
+      </div>
+    </section>
+    <section class="seven " id="googleScholar2">
+      <h1>
+        GS: Results List
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FGSResultsList.png?v=1622674435783" class="imageImg" alt="Search results page with list of articles. Each has a Cited By link under the article description." />
+          <button class="trigger">
+            <span class="sr-only">Cited by</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>Many articles listed in the results will have a <em>Cited by</em> link under the article description.</p>
+        <p>Google Scholar also includes the number of articles that have cited it, which is one indication of how influential the article is.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'Cited by' to see the list of articles.</em>
+        </p>
+      </div>
+    </section>
+    <section class="eight " id="googleScholar3">
+      <h1>
+        GS Cited By List
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FGSLongList.png?v=1622674790360" class="imageImg" alt="Full list of 8,430 cited by articles. At the top of the list is a checkbox option to Search within citing articles." />
+          <button class="trigger">
+            <span class="sr-only">Search within citing articles</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>The full list of articles may be very long (this one is 8,430) so you may also want to
+        narrow down that list using some keywords.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click the "Search within citing articles" checkbox to narrow your results.</em>
+        </p>
+      </div>
+    </section>
+    <section class="nine " id="googleScholar4">
+      <h1>
+        GS: Search Within
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FGSSearchWithin(1).png?v=1622675501790" class="imageImg" alt="With the search within citing articles box checked, this page shows how to enter the keyword string 'higher education library research' to narrow down the citing articles list. Click the search button to see the filtered list." />
+          <button class="trigger">
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>The full list of articles may be very long (this one is 8,430) so you may also want to add more search terms to narrow down that list.</p>
+        <p>Be sure the check the "Search within citing articles" option to avoid starting a whole new search.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click the Search magnifying glass icon to narrow your results.</em>
+        </p>
+      </div>
+    </section>
+    <section class="ten " id="googleScholar5">
+      <h1>
+        GS: Search Within
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FGSSearchWithinResults.png?v=1622677379826" class="imageImg" alt="The filtered list of search results is narrowed down to 970 results. This list can also be narrowed down by selecting date range filters. Click Next to view the ProQuest demo." />
+          <button class="trigger next teal-btn">
+            Next <i class="bi bi-arrow-right-square-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>Now there are fewer articles in the list, but adding more keywords or limiting 
+        results by date range will help narrow it down even further.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'Next' to try citation chaining in ProQuest.</em>
+        </p>
+      </div>
+    </section>
+    <section class="eleven " id="proquest1">
+      <h1>
+        ProQuest (PQ) Search
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FPQSearch.png?v=1622678670214" class="imageImg" alt="ProQuest landing page with the term 'motivation' entered into the search box. Click on the search button within this image to move on to the next page." />
+          <button class="trigger">
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>Enter your search term(s) in the search box and then click "Search" to see a list of results.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click the 'Search' button to find articles about motivation.</em>
+        </p>
+      </div>
+    </section>
+    <section class="twelve " id="proquest2">
+      <h1>
+        PQ Cited By
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FPQCitedBy.png?v=1622679046186" class="imageImg" alt="Search results page with list of articles. Each has a Cited By link under the article description." />
+          <button class="trigger">
+            <span class="sr-only">Cited by</span>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>Articles listed in the results will have a <em>Cited by</em> link under the article description.</p>
+        <p>ProQuest also includes the number of articles that have cited it, indicating how influential the article is.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'Cited by' to see the list of articles.</em>
+        </p>
+      </div>
+    </section>
+    <section class="thirteen " id="proquest3">
+      <h1>
+        PQ Cited By
+      </h1>
+      <div class="slide">
+        <div class="slideImage">
+          <img src="https://cdn.glitch.com/ec40f7e3-7f2f-4c52-a909-541fcb2002c2%2FPQList.png?v=1622679401756" class="imageImg" alt="Full list of 28 cited by articles with options to sort the results by date and other criteria." />
+          <button class="trigger next teal-btn">
+            Next <i class="bi bi-arrow-right-square-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p>Articles listed in the results will have a <em>Cited by</em> link under the article description.</p>
+        <p>ProQuest also includes the number of articles that have cited it, indicating how influential the article is.</p>
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Go back to review how to find 'Cited by'options in these databases.</em>
+        </p>
+      </div>
+    </section>
+    <section class="fourteen " id="theEnd">
+      <h1>
+        On Your Own
+      </h1>
+      <div class="slide">
+        <div class="slideBlank">
+          <div class="slideBlankContent">
+            <p>
+              Now that you've seen how to use the 'Cited By' options in these databases, try it for yourself by visiting the databases (requires Cal Poly Humboldt login):
+            </p>
+            <ul>
+              <li><a href="https://libguides.humboldt.edu/pubmed_open" target="_blank">PubMed</a></li>
+              <li><a href="http://scholar.google.com/" target="_blank">Google Scholar</a></li>
+              <li><a href="https://libguides.humboldt.edu/proquest-all" target="_blank">ProQuest</a></li>
+            </ul>
+          </div>
+          <button class="end-trigger teal-btn">
+            <i class="bi bi-arrow-counterclockwise"></i> Start Over
+          </button>
+        </div>
+      </div>
+      <div class="description">
+        <p class="tryit">
+          <em><i class="bi bi-puzzle-fill"></i> Click 'Start Over' to review how to find 'Cited by'options in these databases.</em>
+        </p>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="navigationArea">
+        <a href="#navModal">
+          <button class="navToggle teal-btn">
+            <i class="bi bi-caret-down-fill"></i> Skip to a database
+          </button>
+        </a>
+        <nav class="off skipToNav" id="navModal">
+          <ul>
+            <li><a href="#pubmed1" id="pubmedSelect">PubMed</a></li>
+            <li><a href="#googleScholar1" id="googleScholarSelect">Google Scholar</a></li>
+            <li><a href="#proquest1" id="proquestSelect">ProQuest</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <a href="https://citation-chaining-playthrough.glitch.me/" target="_blank">
+        <button class="openNew teal-btn">
+          Open in a new tab <i class="bi bi-box-arrow-up-right"></i>
+        </button>
+      </a>
+    </div>
+    
+    <div class="mask">
+    </div>
+      
+    </div>
+  </body>
+</html>
