@@ -1,0 +1,297 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body {
+  font-size: 12px;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+} 
+
+section {
+  display: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  padding-left: 0.5em;
+}
+
+.slide {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  box-shadow: 0.75em 0.75em rgba(0,0,0,0.2);
+  border-radius: 0.5em;
+  background: #eee;
+  width: 100%;
+}
+
+.slideImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.imageImg {
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.trigger, .end-trigger {
+  font-size: 1.5vw;
+  box-shadow: 0vw 0vw 2vw yellow;
+  border: 2px solid #30b55c;
+  position: absolute;
+  background: transparent;
+  transition: 250ms;
+}
+
+.one .trigger {
+  top: 44%;
+  left: 76%;
+  width: 8.5%;
+  border-color: red;
+  height: 6%;
+}
+
+.two .trigger {
+  top: 73.5%;
+  left: 34%;
+  width: 39%;
+  height: 6%;
+}
+
+.three .trigger {
+  top: 78.25%;
+  left: 69.5%;
+  width: 13%;
+  height: 6%;
+}
+
+.four .trigger {
+  top: 87.5%;
+  left: 17%;
+  width: 15%;
+  height: 6%;
+}
+
+.six .trigger {
+  top: 34.5%;
+  left: 68.15%;
+  width: 3.6%;
+  height: 6.1%;
+  border-color: red;
+}
+
+.seven .trigger {
+  top: 27%;
+  left: 21%;
+  width: 9%;
+  height: 6%;
+}
+
+.eight .trigger {
+  top: 18.5%;
+  left: 17%;
+  width: 15.5%;
+  height: 6%;
+}
+
+.nine .trigger {
+  top: 0.6%;
+  left: 58.9%;
+  width: 3.65%;
+  height: 6.2%;
+  border-color: red;
+}
+
+.eleven .trigger {
+  top: 62.5%;
+  left: 80%;
+  width: 6%;
+  height: 6%;
+  border-color: red;
+}
+
+.twelve .trigger {
+  top: 69%;
+  left: 52.5%;
+  width: 8%;
+  height: 6%;
+}
+
+.thirteen .trigger {
+  bottom: 3%;
+  right: 2%;
+  font-size: 2em;
+  padding: 0 0.5em;
+}
+
+.fourteen .end-trigger{
+  bottom: 3%;
+  right: 2%;
+  font-size: 2em;
+  padding: 0 0.5em;
+}
+
+.slideBlankContent {
+  padding: 1em;
+  font-size: 1em;
+}
+
+.trigger:hover {
+  box-shadow: 0vw 0vw 0.25vw yellow;
+  background-color: rgba(255,255,0,0.5);
+  border-color: transparent;
+}
+
+.trigger.next {
+  font-size: 2em;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  border-radius: 8px;
+  padding: 0 0.5em;
+}
+
+.trigger.next:hover {
+  background-color: #fff;
+  border-color: #348371;
+}
+
+.back {
+  font-size: 3em;
+  color: rgba(196, 67, 154,0.6);
+  position: absolute;
+  top: 45%;
+  left: -15px;
+  transition: 0.25s;
+  border: none;
+  background: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+.back:hover {
+  color: rgba(196, 67, 154,0.8);
+}
+
+.description {
+  font-size: 1.5em;
+  padding: 1em;
+  margin: 1.5em 1em 0.5em 1em;
+  border-radius: 0.5rem;
+  border: 1px solid #C4439A;
+  box-shadow: 5px 5px 0px #C4439A;
+}
+
+.tryit {
+  background: #fff;
+  padding: 0.5em;
+  border-radius: 7px;
+  transition: 250ms;
+}
+
+.tryit i {
+  color: #C4439A;
+}
+
+.navMenu {
+  color: #348371;
+  margin-top: 1em;
+}
+
+.pink-btn {
+  border: 1px solid #FF5678;
+  box-shadow: 3px 3px 0px #FF5678;
+  background: #fff;
+  border-radius: 3px;
+  transition: 250ms;
+  color: #348371;
+}
+
+.pink-btn:hover {
+  box-shadow: 1px 1px 0px #FF5678;
+  border: 1px solid #FF5678;
+  color: #FF5678;
+}
+
+.skipToNav {
+  border: 1px solid #348371;
+  max-width: 200px;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  margin: 1em;
+}
+
+.skipToNav ul {
+  padding: 1em;
+}
+
+.skipToNav li {
+  list-style-type: none;
+}
+
+.skipToNav a {
+  color: #348371;
+  text-decoration: underline;
+}
+
+.skipToNav a:hover {
+  color: #1D4E3F;
+  text-decoration: none;
+}
+
+.footer {
+  margin: 2rem 1rem;
+}
+
+.navigationArea, .openNav {
+  display: inline-block;
+  margin: 1em 2em;
+}
+
+.mask {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+.off {
+  display: none;
+}
+
+.bottomMargin {
+  margin-bottom: 120px;
+}
+
+@media screen and (min-width: 530px) {
+  body {
+    font-size: 16px;
+  }
+
+  .slideBlankContent {
+    font-size: 1.25em;
+    padding-top: 10%;
+  }  
+}
