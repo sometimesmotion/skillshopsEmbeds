@@ -214,8 +214,8 @@ h1 {
 }
 
 .pink-btn {
-  border: 1px solid #e92d57;
-  box-shadow: 3px 3px 0px #e92d57;
+  border: 1px solid #FF5678;
+  box-shadow: 3px 3px 0px #FF5678;
   background: #fff;
   border-radius: 3px;
   transition: 250ms;
@@ -223,7 +223,9 @@ h1 {
 }
 
 .pink-btn:hover {
-  box-shadow: 1px 1px 0px #e92d57;
+  box-shadow: 1px 1px 0px #FF5678;
+  border: 1px solid #FF5678;
+  color: #FF5678;
 }
 
 .skipToNav {
