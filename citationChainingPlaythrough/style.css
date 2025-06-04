@@ -213,20 +213,17 @@ h1 {
   margin-top: 1em;
 }
 
-.teal-btn {
-  border: 1px solid #348371;
-  box-shadow: 3px 3px 0px #348371;
+.pink-btn {
+  border: 1px solid #e92d57;
+  box-shadow: 3px 3px 0px #e92d57;
   background: #fff;
   border-radius: 3px;
   transition: 250ms;
   color: #348371;
 }
 
-.teal-btn:hover {
-  box-shadow: 1px 1px 0px #348371;
-}
-
-a .teal-btn  {
+.pink-btn:hover {
+  box-shadow: 1px 1px 0px #e92d57;
 }
 
 .skipToNav {
