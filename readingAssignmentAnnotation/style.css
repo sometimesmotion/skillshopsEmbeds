@@ -132,6 +132,7 @@ h2 {
   font-family: Helvetica,Arial,sans-serif;
   background: #efefef;
   padding: 18px 1.25rem 1.25rem;
+  font-size: 0.75em;
 }
 
 @media (min-width: 980px) {
