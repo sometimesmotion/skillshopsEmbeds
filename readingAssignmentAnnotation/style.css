@@ -125,6 +125,10 @@ h2 {
   border: none !important;
 }
 
+.popover {
+  box-shadow: 2px 2px 5px #333333;
+}
+
 .menuDescription {
   font-size: 12px;
   padding: 0;
