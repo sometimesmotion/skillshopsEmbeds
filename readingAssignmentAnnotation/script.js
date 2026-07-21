@@ -1,9 +1,9 @@
 $(function () {
-  //$('[data-toggle="popover"]').popover();
+  $('[data-toggle="popover"]').popover();
 
-  $('[data-toggle="popover"]').popover({
-    //trigger: 'focus'
-  });
+  /*$('[data-toggle="popover"]').popover({
+    trigger: 'focus'
+  });*/
   
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
