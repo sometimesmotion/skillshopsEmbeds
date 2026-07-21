@@ -39,12 +39,12 @@ h1 {
 }
 
 a {
-  color: #00856a;
+  color: #00856a !important;
 }
 
 a:hover {
   text-decoration: none;
-  color: #004c46;
+  color: #004c46 !important;
 }
 
 .navigation {
