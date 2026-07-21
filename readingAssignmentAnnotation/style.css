@@ -47,6 +47,10 @@ a:hover {
   color: #025DC5 !important;
 }
 
+.figure a {
+  color: #025DC5 !important;
+}
+
 .navigation {
   padding: 0;
   position: relative;
