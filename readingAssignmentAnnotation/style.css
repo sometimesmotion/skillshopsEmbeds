@@ -133,7 +133,6 @@ h2 {
 
 .popover {
   box-shadow: 5px 5px rgba(255, 192, 203, 1);
-  border: 2px solid rgba(255, 192, 203, 1);
   z-index: 0;
 }
 
