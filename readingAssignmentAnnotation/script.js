@@ -2,7 +2,7 @@ $(function () {
   //$('[data-toggle="popover"]').popover();
 
   $('[data-toggle="popover"]').popover({
-    trigger: 'focus'
+    //trigger: 'focus'
   });
   
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
