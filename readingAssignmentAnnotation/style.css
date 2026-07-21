@@ -38,8 +38,13 @@ h1 {
   font-size: 2rem;
 }
 
+a {
+  color: #00856a;
+}
+
 a:hover {
   text-decoration: none;
+  color: #004c46;
 }
 
 .navigation {
