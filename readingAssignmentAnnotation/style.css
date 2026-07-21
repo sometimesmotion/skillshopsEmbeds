@@ -47,7 +47,7 @@ a:hover {
   color: #025DC5 !important;
 }
 
-.figure a {
+.figure a, footer a {
   color: #025DC5 !important;
 }
 
