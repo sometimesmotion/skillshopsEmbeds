@@ -126,8 +126,13 @@ h2 {
 }
 
 .popover {
-  box-shadow: 2px 2px 5px #333333;
   background: #00856A;
+  color: #ffffff;
+  border: 2px solid #00856A;
+  box-shadow: 2px 2px 5px #ccc;
+}
+.popover .arrow {
+  display: none;
 }
 
 .menuDescription {
