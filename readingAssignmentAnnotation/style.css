@@ -136,7 +136,7 @@ h2 {
 }
 
 .popover-content {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .menuDescription {
